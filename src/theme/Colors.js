@@ -1,0 +1,37 @@
+const colors = {
+  primary: '#ffffff',
+  secondary: '#33353F',
+  accent: '#15C258',
+  black: '#000',
+  blue: '#56B8FF',
+  white: '#fff',
+  red: '#ff0000',
+  green: '#00ff00',
+  success: '#38C1A0',
+  error: '#f07970',
+  transparent: 'transparent',
+  grey: '#6C6C6C',
+  lightGrey: '#E5E5E5',
+  background: '#F0F0F0',
+  bordercolor: '#E8EAED',
+  putpickorange: '#F8E474',
+  putpickdarkorange: '#C9B024',
+  putpickgreen: '#15C258',
+
+  OVERLAY_DARK_10: 'rgba(0,0,0,0.1)',
+  OVERLAY_DARK_20: 'rgba(0,0,0,0.2)',
+  OVERLAY_DARK_30: 'rgba(0,0,0,0.3)',
+  OVERLAY_DARK_40: 'rgba(0,0,0,0.4)',
+  OVERLAY_DARK_50: 'rgba(0,0,0,0.5)',
+  OVERLAY_DARK_60: 'rgba(0,0,0,0.6)',
+  OVERLAY_DARK_70: 'rgba(0,0,0,0.7)',
+
+  OVERLAY_LIGHT_10: 'rgba(255,255,255,0.1)',
+  OVERLAY_LIGHT_20: 'rgba(255,255,255,0.2)',
+  OVERLAY_LIGHT_30: 'rgba(255,255,255,0.3)',
+  OVERLAY_LIGHT_40: 'rgba(255,255,255,0.4)',
+  OVERLAY_LIGHT_50: 'rgba(255,255,255,0.5)',
+  OVERLAY_LIGHT_60: 'rgba(255,255,255,0.6)',
+};
+
+export default colors;
