@@ -1,18 +1,18 @@
-import {Dimensions, PixelRatio} from 'react-native';
-import {s, ms, vs, mvs} from 'react-native-size-matters';
+import { Dimensions, PixelRatio } from 'react-native';
+import { s, ms, vs, mvs } from 'react-native-size-matters';
 
 let SCREEN_HEIGHT = Dimensions.get('window').height;
 let SCREEN_WIDTH = Dimensions.get('window').width;
 let FONT_SCALE = Dimensions.get('window').fontScale;
 
-const windowHeight = height => {
+const windowHeight = (height: number) => {
   var size = SCREEN_HEIGHT > 720 ? 720 : 667;
-  let tempHeight = SCREEN_HEIGHT * parseFloat(height / 667);
+  let tempHeight = (SCREEN_HEIGHT * height) / 667;
   return PixelRatio.roundToNearestPixel(tempHeight);
 };
 
-const windowWidth = width => {
-  let tempWidth = SCREEN_WIDTH * parseFloat(width / 375);
+const windowWidth = (width: number) => {
+  let tempWidth = (SCREEN_WIDTH * width) / 375;
   return PixelRatio.roundToNearestPixel(tempWidth);
 };
 
@@ -43,9 +43,9 @@ export const fontSizes = {
 
 export const scale = {
   s,
-  ms: (size, factor = 0.1) => ms(size, factor),
+  ms: (size: number, factor: number | undefined = 0.1) => ms(size, factor),
   vs,
-  mvs: (size, factor = 0.1) => mvs(size, factor),
+  mvs: (size: number, factor: number | undefined = 0.1) => mvs(size, factor),
   windowHeight,
   windowWidth,
   SCREEN_WIDTH,

@@ -1,13 +1,14 @@
 import * as React from 'react';
-import {Text, View} from 'react-native';
+
+import Routes from './Routes';
 
 interface Props {}
 
 const App: React.FC<Props> = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <React.Fragment>
+      <Routes />
+    </React.Fragment>
   );
 };
 
