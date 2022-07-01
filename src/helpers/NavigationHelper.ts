@@ -30,7 +30,7 @@ const navigate = (name: string, params: any) => {
  * @param {Number} index - index for start route
  * @param {Array} routes - array containe route name and params ex. [{name: '', params: {}}]
  */
-const reset = (index: number, routes: Omit<Route<string>, 'key'>[]) => {
+const reset = (index: number, routes: Route<string>[]) => {
   _navigationRef.current?.dispatch(
     CommonActions.reset({
       index,

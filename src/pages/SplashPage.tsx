@@ -5,18 +5,18 @@ import {
 } from '@react-navigation/native-stack';
 import React, { useEffect } from 'react';
 import { Text, View } from 'react-native';
+import Button from '_components/atoms/buttons/Button';
 import { RootStackParamList } from '_interface/Navigation.interface';
 
 type SplashPageProps = NativeStackScreenProps<RootStackParamList, 'SplashPage'>;
 
 const SplashPage: React.FC<SplashPageProps> = props => {
-  useEffect(() => {
-    props.navigation.navigate('LoginPage');
-  }, []);
-
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>SplashPage</Text>
+      <Button
+        text='Go to login page'
+        onPress={() => props.navigation.navigate('LoginPage')}
+      />
     </View>
   );
 };
