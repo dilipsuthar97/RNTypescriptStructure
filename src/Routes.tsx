@@ -4,12 +4,13 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { _navigationRef } from '_helpers/NavigationHelper';
+import { RootStackParamList } from '_interface/Navigation.interface';
 
 // Screens
 import SplashPage from '_pages/SplashPage';
 import LoginPage from '_pages/auth/LoginPage';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const Routes = () => {
   return (

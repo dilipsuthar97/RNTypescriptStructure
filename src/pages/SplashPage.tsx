@@ -1,9 +1,13 @@
+import { useNavigation } from '@react-navigation/native';
+import {
+  NativeStackNavigationProp,
+  NativeStackScreenProps,
+} from '@react-navigation/native-stack';
 import React, { useEffect } from 'react';
 import { Text, View } from 'react-native';
-import { NavigationHelper } from '_helpers';
-import { NavigationScreenProps } from '_interface/NavigationScreen.interface';
+import { RootStackParamList } from '_interface/Navigation.interface';
 
-export interface SplashPageProps extends NavigationScreenProps {}
+type SplashPageProps = NativeStackScreenProps<RootStackParamList, 'SplashPage'>;
 
 const SplashPage: React.FC<SplashPageProps> = props => {
   useEffect(() => {

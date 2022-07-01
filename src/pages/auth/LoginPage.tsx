@@ -1,8 +1,9 @@
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React from 'react';
 import { Text, View } from 'react-native';
-import { NavigationScreenProps } from '_interface/NavigationScreen.interface';
+import { RootStackParamList } from '_interface/Navigation.interface';
 
-export interface LoginPageProps extends NavigationScreenProps {}
+type LoginPageProps = NativeStackScreenProps<RootStackParamList, 'LoginPage'>;
 
 const LoginPage: React.FC<LoginPageProps> = props => {
   return (
